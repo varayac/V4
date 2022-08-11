@@ -1,0 +1,14 @@
+# Ignora archivos del sistema Mac
+.DS_store
+
+# Ignora carpeta node_modules
+node_modules
+
+# Ignora todos los archivos de texto
+*.txt
+
+# API Keys
+.env
+
+# Archivos SASS
+.sass-cache

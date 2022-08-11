@@ -1,0 +1,14 @@
+{
+  "name": "port",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "build": "npx tailwindcss -i ./assets/css/tailwind.css -o ./dist/tailwind.css --watch"
+  },
+  "author": "varayac",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.1.7"
+  }
+}

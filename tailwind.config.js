@@ -12,9 +12,6 @@ module.exports = {
       },
     },
     extend: {
-      // fontFamily: {
-      //   poppins: ["'Poppins'", "sans-serif"],
-      // },
       colors: {
         primary: {
           DEFAULT: "#00ADB5",

@@ -21,3 +21,16 @@ function changeMenuIcon() {
   const icon = isContainTraslate ? "icon-menu" : "icon-close";
   toggleMenuIcon.src = `./assets/images/icons/${icon}.svg`;
 }
+
+// Toggle theme
+const html = document.querySelector("html");
+const toggleTheme = document.querySelector("#toggle-theme");
+const toggleThemeIcon = toggleTheme.querySelector("img");
+console.log(html);
+toggleTheme.addEventListener("click", () => {
+  html.classList.toggle("dark");
+  const isDark = html.classList.contains("dark");
+  const themeIcon = isDark ? "light" : "dark";
+  toggleThemeIcon.src = `./assets/images/icons/icon-${menu}.svg`;
+  console.log(themeIcon);
+});

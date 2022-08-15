@@ -15,3 +15,8 @@ node_modules
 
 # Carpeta dist
 dist
+
+# identifier
+*.Identifier
+*:*.Identifier
+*:Zone.Identifier

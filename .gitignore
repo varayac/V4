@@ -14,7 +14,7 @@ node_modules
 .sass-cache
 
 # Carpeta dist
-dist
+# dist
 
 # identifier
 *.Identifier

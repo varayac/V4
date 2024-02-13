@@ -2,215 +2,270 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio VA</title>
-  <link rel="stylesheet" href="./dist/tailwind.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Portfolio VA</title>
+   <link rel="stylesheet" href="./dist/tailwind.css">
 </head>
 
 <body>
-  <!-- Header or Navbar -->
-  <header class="header">
-    <div class="container flex items-center justify-between h-16 md:h-20">
-      <h1 class="relative z-30 text-2xl font-semibold">Víctor Araya</h1>
+   <!-- Header or Navbar -->
+   <header class="header">
+      <div class="container flex items-center justify-between h-16 md:h-20">
+         <h1 class="relative z-30 text-2xl font-semibold">Víctor Araya</h1>
 
-      <div class="flex flex-row-reverse items-center gap-3 md:flex-row md:gap-12">
-        <!-- Menu List -->
-        <ul id="menu" class="nav-menus translate-y-[-200%] md:translate-y-0">
-          <a class="nav-link" href="#home">Home</a>
-          <a class="nav-link" href="#about">About</a>
-          <a class="nav-link" href="#portfolio">Portfolio</a>
-          <a class="nav-link" href="#contact">Contact</a>
-        </ul>
+         <div class="flex flex-row-reverse items-center gap-3 md:flex-row md:gap-12">
+            <!-- Menu List -->
+            <ul id="menu" class="nav-menus translate-y-[-200%] md:translate-y-0">
+               <a class="nav-link" href="#home">Inicio</a>
+               <a class="nav-link" href="#about">Sobre mi</a>
+               <a class="nav-link" href="#portfolio">Proyectos</a>
+               <a class="nav-link" href="#contact">Contacto</a>
+            </ul>
 
-        <!-- Mobile Menu Button -->
-        <button id="toggle-menu" class="relative z-30 p-2 md:hidden dark:invert">
-          <img src="./assets/images/icons/icon-menu.svg" alt="menu">
-        </button>
+            <!-- Mobile Menu Button -->
+            <button id="toggle-menu" class="relative z-30 p-2 md:hidden dark:invert">
+               <img src="./assets/images/icons/icon-menu.svg" alt="menu">
+            </button>
 
-        <!-- Toggle theme button -->
-        <button id="toggle-theme" class="relative z-30 dark:invert">
-          <img class="md:opacity-70 w-7 md:-mt-1" src="./assets/images/icons/icon-dark.svg" alt="theme" />
-        </button>
+            <!-- Toggle theme button -->
+            <button id="toggle-theme" class="relative z-30 dark:invert">
+               <img class="md:opacity-70 w-7 md:-mt-1" src="./assets/images/icons/icon-dark.svg" alt="theme" />
+            </button>
 
+         </div>
       </div>
-    </div>
-  </header>
+   </header>
 
-  <!-- Main Section -->
-  <main class="container">
+   <!-- Main Section -->
+   <main class="container">
 
-    <!-- Home Section -->
-    <section id="home" class="home-section">
-      <div class="order-2 mt-10 md:order-1">
-        <h2 class="text-5xl font-bold md:text-7xl">
-          Hi,
-        </h2>
-        <h2 class="mt-2 text-5xl font-bold md:text-7xl">
-          I am <span class="text-primary">El Loco Araya</span>
-        </h2>
-        <h3 class="mt-5 mb-10 text-2xl font-bold md:text-3xl opacity-70">
-          Full Stack CRUD's Developer
-        </h3>
-        <a href="#portfolio" class="btn-primary">
-          See my work
-        </a>
+      <!-- Home Section -->
+      <section id="home" class="home-section">
+         <div class="order-2 mt-10 md:order-1">
+            <h2 class="text-5xl font-bold md:text-7xl">
+               Hola,
+            </h2>
+            <h2 class="mt-2 text-5xl font-bold md:text-7xl">
+               Soy <span class="text-primary">Víctor Araya</span>
+            </h2>
+            <h3 class="mt-5 mb-10 text-2xl font-bold md:text-3xl opacity-70">
+               <span class="text-primary">Desarrollador Back-end</span>, Santiago de
+               Chile 🇨🇱
+            </h3>
+            <a href="#portfolio" class="btn-primary">
+               Descargar CV
+            </a>
+         </div>
+         <div class="container-hero-image">
+            <img class="object-cover object-center w-full h-full opacity-90" src="./assets/images/hero.webp"
+                 alt="profile">
+         </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="py-32">
+         <!-- Describe -->
+         <div class="flex flex-col items-center justify-center gap-10 md:flex-row md:gap-20">
+            <div class="w-48 h-48 overflow-hidden rounded-full md:w-64 md:h-64 bg-primary">
+               <img class="object-cover w-full h-full opacity-90" src="./assets/images/pal.png" alt="profile">
+            </div>
+            <div class="w-full text-base text-center md:w-1/2 md:text-lg md:text-left">
+               <h2 class="mb-3 text-2xl font-bold text-primary md:text-3xl">
+                  Un poco sobre mi
+               </h2>
+               <p class="mb-3 opacity-80">
+                  Apasionado desarrollador web con enfoque en back-end y ampliando mis habilidades como dev-ops. Cuento
+                  con experiencia en diversos proyectos de carácter educativo y colaborativo. Titulado como Analista
+                  Programador y en constante actualización de mis habilidades.
+               </p>
+               <p class="opacity-80">
+                  A lo largo de mi trayectoria, he cultivado habilidades valiosas en el mundo de las tecnologías de la
+                  información, redes y desarrollo web. Incluso, tengo experiencia en electrónica básica, siendo la
+                  micro-soldadura y la reconstrucción de aparatos viejos mi pasatiempo.
+               </p>
+            </div>
+         </div>
+
+         <!-- My Skills -->
+         <div class="mt-32 text-center">
+            <h2 class="mb-4 text-3xl font-bold text-primary md:text-4xl">
+               Mis Skills
+            </h2>
+            <div class="flex flex-wrap items-center justify-center gap-24 md:gap-12">
+               <div class="skill" data-text="Experiencia 2 años">
+                  <img class="w-16" src="./assets/images/skills/nodejs.svg" alt="node.js">
+               </div>
+               <div class="skill" data-text="Experiencia 2 años">
+                  <img class="w-16" src="./assets/images/skills/express.svg" alt="express framework">
+               </div>
+               <div class="skill" data-text="Experiencia 2 años">
+                  <img class="w-16" src="./assets/images/skills/github.svg" alt="github">
+               </div>
+               <div class="skill" data-text="Experiencia 2 años">
+                  <img class="w-16" src="./assets/images/skills/postgresql.svg" alt="postgresql">
+               </div>
+               <div class="skill" data-text="Experiencia 2 años">
+                  <img class="w-16" src="./assets/images/skills/sequelize.svg" alt="sequelize">
+               </div>
+               <div class="skill" data-text="Experiencia 2 años">
+                  <img class="w-16" src="./assets/images/skills/mongodb.svg" alt="mongodb">
+               </div>
+
+            </div>
+         </div>
+
+      </section>
+
+      <!-- Dots -->
+      <div class="items-center justify-between hidden w-full gap-3 md:flex">
+         <div class="w-4 h-3 bg-primary/60"></div>
+         <div class="w-4 h-3 bg-primary/60"></div>
+         <div class="w-4 h-3 bg-primary/60"></div>
+         <div class="w-4 h-3 bg-primary/60"></div>
+         <div class="w-4 h-3 bg-primary/60"></div>
+         <div class="w-4 h-3 bg-primary/60"></div>
+         <div class="w-4 h-3 bg-primary/60"></div>
+         <div class="flex-grow h-3 bg-gradient-to-r from-primary/60 to-primary/0"></div>
       </div>
-      <div class="container-hero-image">
-        <img class="object-cover object-center w-full h-full opacity-90" src="./assets/images/people.jpg" alt="profile">
-      </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-32">
-      <!-- Describe -->
-      <div class="flex flex-col items-center justify-center gap-10 md:flex-row md:gap-20">
-        <div class="w-48 h-48 overflow-hidden rounded-full md:w-64 md:h-64 bg-primary">
-          <img class="object-cover w-full h-full opacity-90" src="./assets/images/people.jpg" alt="profile">
-        </div>
-        <div class="w-full text-base text-center md:w-1/2 md:text-lg md:text-left">
-          <h2 class="mb-3 text-2xl font-bold text-primary md:text-3xl">
-            Hi, I'm El Loco Araya
-          </h2>
-          <p class="mb-3 opacity-80">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere accusantium magni possimus, sed magnam
-            nulla totam sint quasi! Aut quam aliquam ad saepe quidem est, ab amet eos exercitationem!
-          </p>
-          <p class="opacity-80">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis iusto commodi explicabo, et veritatis
-            culpa dolorum modi ut asperiores ad harum voluptas
-            eius!
-          </p>
-        </div>
-      </div>
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="pt-32">
+         <h2 class="portfolio-heading">
+            Proyectos Colaborativos
+         </h2>
 
-      <!-- My Skills -->
-      <div class="mt-32 text-center">
-        <h2 class="mb-4 text-3xl font-bold text-primary md:text-4xl">
-          My Skills
-        </h2>
-        <div class="flex flex-wrap items-center justify-center gap-24 md:gap-12">
-          <div class="skill" data-text="Experience 2 years">
-            <img class="w-16" src="./assets/images/skills/html.png" alt="html">
-          </div>
-          <div class="skill" data-text="Experience 2 years">
-            <img class="w-16" src="./assets/images/skills/css.png" alt="css">
-          </div>
-          <div class="skill" data-text="Experience 1 years">
-            <img class="w-16" src="./assets/images/skills/tailwindcss.png" alt="tailwindcss">
-          </div>
-          <div class="skill" data-text="Experience 2 years">
-            <img class="w-16" src="./assets/images/skills/javascript.png" alt="javascript">
-          </div>
-          <div class="skill" data-text="Experience 1 years">
-            <img class="w-16" src="./assets/images/skills/reactjs.png" alt="reactjs">
-          </div>
-        </div>
-      </div>
+         <ul class="w-full py-5 space-y-10 md:w-5/6">
 
-    </section>
+            <!-- Portfolio List -->
+            <li class="portfolio-card">
+               <div class="w-full md:w-1/3 h-60">
+                  <a href="https://c14-02-m-node-react.vercel.app" target="_blank">
+                     <img class="object-cover w-full h-full" src="./assets/images/projects/clon.png" alt="clon AirBnB">
+                  </a>
+               </div>
+               <div class="w-full p-5 md:w-2/3">
+                  <h2 class="mb-3 text-3xl font-bold">
+                     1. Clon de AirBnB
+                  </h2>
+                  <p>Proyecto colaborativo desarrollado con stack MERN. Aplicación web encargada de simular el
+                     funcionamiento de la plataforma AirBnB con fines educativos.
+                  </p>
+                  <p class="mt-5">
+                     <span class="font-bold">Funciones:</span> desarrollo de la lógica base del proyecto en MVC,
+                     desarrollo del modulo para imágenes,
+                     despliegue de API a producción en Render.io.
+                  </p>
+                  <div class="flex items-center gap-2 mt-8 font-semibold text-white">
+                     <a href="https://github.com/No-Country/c14-02-m-node-react" target="_blank"
+                        class="portfolio-link bg-primary">
+                        <img class="w-5 h-5" src="./assets/images/icons/github.svg" alt="github">
+                        GitHub
+                     </a>
+                     <a href="https://c14-02-m-node-react.vercel.app" target="_blank"
+                        class="portfolio-link bg-primary-gray dark:bg-primary-black">
+                        <img class="w-5 h-5" src="./assets/images/icons/web.svg" alt="Website">
+                        Website
+                     </a>
+                  </div>
+               </div>
+            </li>
 
-    <!-- Dots -->
-    <div class="items-center justify-between hidden w-full gap-3 md:flex">
-      <div class="w-4 h-3 bg-primary/60"></div>
-      <div class="w-4 h-3 bg-primary/60"></div>
-      <div class="w-4 h-3 bg-primary/60"></div>
-      <div class="w-4 h-3 bg-primary/60"></div>
-      <div class="w-4 h-3 bg-primary/60"></div>
-      <div class="w-4 h-3 bg-primary/60"></div>
-      <div class="w-4 h-3 bg-primary/60"></div>
-      <div class="flex-grow h-3 bg-gradient-to-r from-primary/60 to-primary/0"></div>
-    </div>
+            <li class="portfolio-card">
+               <div class="w-full md:w-1/3 h-60">
+                  <a href="https://yumiverse.vercel.app" target="_blank">
+                     <img class="object-cover w-full h-full" src="./assets/images/projects/yumiverse.png"
+                          alt="yumiverse app">
+                  </a>
+               </div>
+               <div class="w-full p-5 md:w-2/3">
+                  <h2 class="mb-3 text-3xl font-bold">
+                     2. YumiVerse App
+                  </h2>
+                  <p>Proyecto colaborativo desarrollado con stack MERN. Aplicación web mobile para la publicación de
+                     restaurantes y ofertas de menus, sin la necesidad de registrarse en la plataforma. Proyecto
+                     completado en un 70%.
+                  </p>
+                  <p class="mt-5">
+                     <span class="font-bold">Funciones:</span> desarrollo de la lógica del proyecto en back-end
+                     utilizando MVC y buenas practicas de codificación con standard de javascript,
+                     definición de la base de datos, módulos de restaurant, user, menus. Despliegue de API a producción
+                     en Render.io.
+                  </p>
+                  <div class="flex items-center gap-2 mt-8 font-semibold text-white">
+                     <a href="https://github.com/No-Country/s12-06-n-node-react" target="_blank"
+                        class="portfolio-link bg-primary">
+                        <img class="w-5 h-5" src="./assets/images/icons/github.svg" alt="github">
+                        GitHub
+                     </a>
+                     <a href="https://yumiverse.vercel.app" target="_blank"
+                        class="portfolio-link bg-primary-gray dark:bg-primary-black">
+                        <img class="w-5 h-5" src="./assets/images/icons/web.svg" alt="Website">
+                        Website
+                     </a>
+                  </div>
+               </div>
+            </li>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="pt-32">
-      <h2 class="portfolio-heading">
-        My Portfolio
+            <li class="portfolio-card">
+               <div class="w-full md:w-1/3 h-60">
+                  <img class="object-cover w-full h-full" src="./assets/images/random-portfolio.jpg" alt="clon AirBnB">
+               </div>
+               <div class="w-full p-5 md:w-2/3">
+                  <h2 class="mb-3 text-3xl font-bold">
+                     3. Ticket Bus
+                  </h2>
+                  <p>En desarrollo... App para la venta de tickets o boletos de bus para viajes.
+                  </p>
+                  <p class="mt-5">
+                     <span class="font-bold">Funciones:</span> Desarrollador Back-end
+                  </p>
+                  <div class="flex items-center gap-2 mt-8 font-semibold text-white">
+                     <a href="https://github.com/No-Country/s13-06-t-node-react" target="_blank"
+                        class="portfolio-link bg-primary">
+                        <img class="w-5 h-5" src="./assets/images/icons/github.svg" alt="github">
+                        GitHub
+                     </a>
+                     <a href="#" target="_blank" class="portfolio-link bg-primary-gray dark:bg-primary-black">
+                        <img class="w-5 h-5" src="./assets/images/icons/web.svg" alt="Website">
+                        Website
+                     </a>
+                  </div>
+               </div>
+            </li>
+
+         </ul>
+
+      </section>
+   </main>
+
+   <footer class="w-full mt-40 text-center bg-white dark:bg-primary-gray">
+
+      <!-- Contact Section -->
+      <section id="contact" class="flex flex-col items-center justify-center gap-12 py-20">
+         <h2 class="text-4xl font-bold md:text-5xl text-primary">
+            Contact
+         </h2>
+         <div class="flex flex-wrap justify-center gap-5 md:gap-10">
+            <a href="www.linkedin.com/in/victor-a-dev" target="_blank" class="bg-white contact-link">
+               <img src="./assets/images/icons/icon-linkedin.svg" alt="linkedin">
+            </a>
+            <a href="https://github.com/varayac" target="_blank" class="bg-white contact-link">
+               <img src="./assets/images/icons/icon-github.svg" alt="github">
+            </a>
+            <a href="mailto:victor_araya@outlook.com" target="_blank" class="bg-white contact-link">
+               <img src="./assets/images/icons/icon-email.svg" alt="email">
+            </a>
+         </div>
+      </section>
+      <h2 class="pb-10">
+         &copy; Copyright 2024 - Varayac
       </h2>
 
-      <ul class="w-full py-5 space-y-10 md:w-5/6">
+   </footer>
 
-        <!-- Portfolio List -->
-        <li class="portfolio-card">
-          <div class="w-full md:w-1/3 h-60">
-            <img class="object-cover w-full h-full" src="./assets/images/random-portfolio.jpg" alt="portfolio">
-          </div>
-          <div class="w-full p-5 md:w-2/3">
-            <h2 class="mb-3 text-3xl font-bold">
-              Portfolio 1
-            </h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea praesentium asperiores cum deserunt
-              veritatis sit cupiditate, deleniti aliquam perferendis neque nobis inventore repellat vel perspiciatis
-              excepturi harum nihil esse voluptatibus?</p>
-            <div class="flex items-center gap-2 mt-8 font-semibold text-white">
-              <a href="#" class="portfolio-link bg-primary">
-                <img class="w-5 h-5" src="./assets/images/icons/github.svg" alt="github">
-                GitHub
-              </a>
-              <a href="#" class="portfolio-link bg-primary-gray dark:bg-primary-black">
-                <img class="w-5 h-5" src="./assets/images/icons/web.svg" alt="Website">
-                Website
-              </a>
-            </div>
-          </div>
-        </li>
-
-        <li class="portfolio-card">
-          <div class="w-full md:w-1/3 h-60">
-            <img class="object-cover w-full h-full" src="./assets/images/random-portfolio.jpg" alt="portfolio">
-          </div>
-          <div class="w-full p-5 md:w-2/3">
-            <h2 class="mb-3 text-3xl font-bold">
-              Portfolio 2
-            </h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea praesentium asperiores cum deserunt
-              veritatis sit cupiditate, deleniti aliquam perferendis neque nobis inventore repellat vel perspiciatis
-              excepturi harum nihil esse voluptatibus?</p>
-            <div class="flex items-center gap-2 mt-8 font-semibold text-white">
-              <a href="#" class="portfolio-link bg-primary">
-                <img class="w-5 h-5" src="./assets/images/icons/github.svg" alt="github">
-                GitHub
-              </a>
-              <a href="#" class="portfolio-link bg-primary-gray dark:bg-primary-black">
-                <img class="w-5 h-5" src="./assets/images/icons/web.svg" alt="Website">
-                Website
-              </a>
-            </div>
-          </div>
-        </li>
-
-      </ul>
-
-    </section>
-  </main>
-
-  <footer class="w-full mt-40 text-center bg-white dark:bg-primary-gray">
-
-    <!-- Contact Section -->
-    <section id="contact" class="flex flex-col items-center justify-center gap-12 py-20">
-      <h2 class="text-4xl font-bold md:text-5xl text-primary">
-        Contact
-      </h2>
-      <div class="flex flex-wrap justify-center gap-5 md:gap-10">
-        <a href="#" class="bg-green-500 contact-link">
-          <img src="./assets/images/icons/icon-whatsapp.svg" alt="github">
-        </a>
-        <a href="#" class="bg-blue-500 contact-link">
-          <img src="./assets/images/icons/icon-twitter.svg" alt="twitter">
-        </a>
-        <a href="#" class="bg-pink-500 contact-link">
-          <img src="./assets/images/icons/icon-instagram.svg" alt="instagram">
-        </a>
-      </div>
-    </section>
-    <h2 class="pb-10">
-      &copy; Copyright 2022 - El Víctor
-    </h2>
-
-  </footer>
-
-  <script src="./assets/js/main.js"></script>
+   <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
